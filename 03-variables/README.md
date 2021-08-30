@@ -47,7 +47,7 @@ terraform apply -var='image_id_list=["ami-abc123","ami-def456"]' -var="instance_
 
 create file with following content
 
-```
+```txt
 image_id = "ami-abc123"
 availability_zone_names = [
   "us-east-1a",
@@ -56,6 +56,7 @@ availability_zone_names = [
 ```
 
 if you name file as follow, **terraform will automatically picks values**
+
 - Files named exactly `terraform.tfvars` or `terraform.tfvars.json`.
 - Any files with names ending in `.auto.tfvars` or `.auto.tfvars.json`.
 
@@ -65,7 +66,7 @@ but if you name something else like `something.tfvars`, then you have to tell te
 terraform apply -var-file="something.tfvars"
 ```
 
-### Environment Variables 
+### Environment Variables
 
 ```sh
 # value for image_id
@@ -82,4 +83,3 @@ Terraform loads variables in the following order, with later sources taking prec
 3. The `terraform.tfvars.json` file, if present.
 4. Any `*.auto.tfvars` or `*.auto.tfvars.json` files, processed in lexical order of their filenames.
 5. Any `-var` and `-var-file` options on the command line, in the order they are provided.
-
