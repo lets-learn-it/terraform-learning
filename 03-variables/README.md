@@ -75,6 +75,8 @@ export TF_VAR_availability_zone_names='["us-west-1b","us-west-1d"]'
 
 ## Variable precedence
 
+Terraform loads variables in the following order, with later sources taking precedence over earlier ones:
+
 1. Environment variables
 2. The `terraform.tfvars` file, if present.
 3. The `terraform.tfvars.json` file, if present.
