@@ -1,0 +1,6 @@
+resource "aws_key_pair" "key" {
+  key_name   = "parikshits_key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCWvRmewYkwhug1/7Oj+rZ9iVBOPvcLyWj60N4K7K5E5GRDoFWRsLgo4B8fwueLy9WkLJSweYhn3WIpfpKnDHq1pG+ICtD0mqW9+sr1V6GZEJ0nrXdzcsEqN52N+bXAey8YuTbiplQ6XGmpADkEFDHLGtl3CbmAPPXjR64HuyfIV66UzHnXup8Xc6aYZ+xlvJ1FFj14c9CT95QRGS2EgZy8dinEPn4L0U2qkHP4q5Yy4PvCsWe9ndRzTux0EY6k3VaHqhL+p4K5mkAlQ89xN4ZiKbJqeAW4hC5XLy9fM2vgaVjzQ4RvWWqQY4J8CUT345eUkSFGhmBDj4h+zcYIBRMQmTmrXAwo+LOaJhlDe4JXH2cvfKpf6qUn/fH71zpTXG5wvL+LmIu4OSioCfuCb/Yeh5b40S2pPdkNfJsInrnYi4wTKWCDqSkWG1scUHiFvP+OG/hSwSBhlhgqAJYUSqF8k4jvRWokQpmhMQfHUbwGVxOg4C4nhU5K+k9Zr3GZARs= parikshit@Vostro-5568"
+}
+
+# passphrase of key is abcd@123
