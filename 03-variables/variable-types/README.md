@@ -33,3 +33,19 @@ element(var.mylist, 0)
 # get part of list
 slice(var.mylist, 1, 2)
 ```
+
+## Terraform Variable Types
+
+### Simple Variable Types
+
+- string
+- number
+- bool
+
+### Complex Variable Types
+
+- list(type)
+- set(type)
+- map(type)
+- object
+- tuple([type,...])
