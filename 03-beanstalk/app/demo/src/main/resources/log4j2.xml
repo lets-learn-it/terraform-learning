@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="5">
+    <Appenders>
+
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%r %d{yyyy-MM-dd HH:mm:ss:sss} %c %L %M %sn [%t] %-5p %m%n</Pattern>
+            </PatternLayout>
+        </Console>
+
+        <File name="testingFile" fileName="testLog4j.log" append="true" ignoreExceptions="false" immediateFlush="true">
+
+            <!--Layout type="PatternLayout">
+                <Pattern>%r %d{yyyy-MM-dd HH:mm:ss:sss} %c %L %M %sn [%t] %-5p %msg%n</Pattern>
+            </Layout-->
+            <PatternLayout alwaysWriteExceptions="false">
+                <Pattern>"%-5p [%t] %logger - %msg%ex%n</Pattern>
+            </PatternLayout>
+
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="console" level="info"/>
+            <AppenderRef ref="testingFile" level="error"/>
+        </Root>
+
+
+
+        <!--Logger name="com.example" level="error" additivity="true">
+            <AppenderRef ref="testingFile" />
+        </Logger-->
+    </Loggers>
+</Configuration>
