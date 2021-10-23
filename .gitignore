@@ -3,3 +3,6 @@
 *.tfstate
 *.tfstate.backup
 *.txt
+*.zip
+*.hcl
+*.jar
