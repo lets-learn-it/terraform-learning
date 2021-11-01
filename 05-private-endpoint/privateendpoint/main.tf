@@ -13,7 +13,7 @@ resource "azurerm_private_endpoint" "endpoint" {
 }
 
 resource "azurerm_private_dns_a_record" "dns_a" {
-  name                = format("%s-%s", var.name, "arecord")
+  name                = "demostorage9553"
   zone_name           = var.private_dns_zone_name
   resource_group_name = var.resource_group_name
   ttl                 = 300
