@@ -21,3 +21,7 @@ variable "private_link_enabled_resource_id" {
 variable "private_dns_zone_name" {
   type = string
 }
+
+variable "subresource_names" {
+  type = list(string)
+}
