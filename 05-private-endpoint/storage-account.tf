@@ -4,7 +4,9 @@ module "storage_account" {
     resource_group_name = azurerm_resource_group.example.name
     location = azurerm_resource_group.example.location
     name = "demo"
-    white_list_ip = []
+    # whitelist ip of machine from which terraform creating infra
+    # else terraform apply will fail with 403
+    white_list_ip = ["106.220.73.215"]
 }
 
 resource "azurerm_storage_container" "container" {
