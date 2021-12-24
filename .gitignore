@@ -4,3 +4,4 @@
 *.tfstate.backup
 *.txt
 *.lock.hcl
+*.pyc
