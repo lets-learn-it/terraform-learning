@@ -1,0 +1,1 @@
+# Eventhub - Azure Data Explorer Logging
