@@ -6,3 +6,6 @@
 *.zip
 *.hcl
 *.jar
+*.pyc
+**/gradle/*
+.gradle/*

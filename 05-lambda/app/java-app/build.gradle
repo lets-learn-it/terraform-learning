@@ -1,0 +1,35 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+group = 'in.avabodha'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation group: 'com.amazonaws', name: 'aws-java-sdk-core', version: '1.12.137'
+	implementation group: 'com.amazonaws', name: 'aws-lambda-java-core', version: '1.2.1'
+	implementation group: 'com.amazonaws', name: 'aws-lambda-java-events', version: '3.11.0'
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
