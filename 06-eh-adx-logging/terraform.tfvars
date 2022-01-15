@@ -6,7 +6,7 @@ double_encryption = true
 hot_cache_period = "P31D"
 soft_delete_period = "P365D"
 adx_sku_name = "Standard_D11_v2"
-adx_sku_capacity = 1
+adx_sku_capacity = 2
 
 eh_namespace = "logseventhubns"
 eh_name = "logs_eventhub"
