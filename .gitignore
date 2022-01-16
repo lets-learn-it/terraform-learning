@@ -5,3 +5,8 @@
 *.txt
 *.lock.hcl
 *.pyc
+**/.gradle/*
+**/bin/*
+**/build/*
+**/.idea/*
+**/gradle/*

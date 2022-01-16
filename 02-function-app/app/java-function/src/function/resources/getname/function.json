@@ -1,0 +1,17 @@
+{
+    "scriptFile" : "..\\\\${mainArtifact}",
+    "entryPoint" : "in.avabodha.function.RestFunction.getName",
+    "bindings" : [ {
+      "type" : "httpTrigger",
+      "direction" : "in",
+      "methods" : [ "GET" ],
+      "name" : "getName",
+      "route": "owner/getname",
+      "authLevel": "anonymous"
+    }, {
+      "type" : "http",
+      "direction" : "out",
+      "name" : "\$return"
+    } ]
+  }
+  
