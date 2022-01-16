@@ -3,3 +3,10 @@
 *.tfstate
 *.tfstate.backup
 *.txt
+*.lock.hcl
+**/gradle/*
+**/.gradle/*
+**/.idea/*
+*.pyc
+**/bin/*
+**/build/*
