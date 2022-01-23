@@ -1,3 +1,5 @@
+
+# Read role for storage account
 resource "azurerm_role_assignment" "storage" {
     scope = module.storage_account.storage_account_id
 
@@ -7,6 +9,7 @@ resource "azurerm_role_assignment" "storage" {
     principal_id = module.vm.vm_pricipal_id
 }
 
+# Write role for container
 resource "azurerm_role_assignment" "container" {
     scope = azurerm_storage_container.container2.resource_manager_id
 
