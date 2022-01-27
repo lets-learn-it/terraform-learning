@@ -1,6 +1,6 @@
 # System Assigned Identities
 
-We will create VM which will be having system assigned identity. And also we will allow that identity to acess storage account in read mode while one container in that storage account in write mode.
+We will create VM which will be having system assigned identity. And also we will allow that identity to acess storage account in read mode while one container in that storage account in write mode. Check blog [https://avabodha.in/accessing-storage-account-from-vm-using-system-managed-identity-roles/](https://avabodha.in/accessing-storage-account-from-vm-using-system-managed-identity-roles/)
 
 ## Identity for VM
 
