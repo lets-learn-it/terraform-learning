@@ -15,11 +15,6 @@ variable "db_family" {
   default = "mysql5.6"
 }
 
-variable "cluster_parameters" {
-  type = list(map(string))
-  default = [ ]
-}
-
 variable "engine" {
   default = "aurora"
   type = string
@@ -30,8 +25,11 @@ variable "engine_version" {
   type = string
 }
 
-variable "db_parameters" {
-  type = list(map(string))
-  default = [ ]
+variable "cluster_pg_name" {
+  type = string
+}
+
+variable "db_pg_name" {
+  type = string
 }
 
