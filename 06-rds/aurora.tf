@@ -1,7 +1,7 @@
 module "aurora" {
     source = "./aurora/"
     cluster_name = "aurora-mysql"
-    engine = "aurora-mysql"
+    engine = "aurora"
     engine_version = "5.6"
     cluster_family = "aurora5.6"
     db_family = "mysql5.6"
